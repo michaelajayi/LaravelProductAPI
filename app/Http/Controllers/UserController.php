@@ -21,14 +21,12 @@ class UserController extends Controller
 
     public function register(Request $request)
     {
-
-
         $validator = Validator::make(
             $request->all(),
             [
                 'name' => 'required|string',
                 'email' => 'required|string|unique:users,email',
-                'password' => 'required|string|confirmed',
+                'password' => 'required|string',
             ]
         );
 
