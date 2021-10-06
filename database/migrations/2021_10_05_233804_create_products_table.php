@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->uuid('id')->primary();
             $table->string('name');
             $table->string('description');
-            $table->timestamp('price');
+            $table->string('price');
             $table->string('file_path');
             $table->timestamps();
         });
